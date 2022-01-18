@@ -1,0 +1,19 @@
+{
+    "name": "wordle helper",
+    "description": "helps you with wordle by giving you the answer",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": ["storage", "tabs"],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+       {
+         "matches": [
+             "https://www.powerlanguage.co.uk/wordle",
+             "https://www.powerlanguage.co.uk/wordle/"
+        ],
+         "js": ["content.js"]
+       }
+     ]
+}

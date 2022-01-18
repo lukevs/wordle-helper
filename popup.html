@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <style>
+      body {
+        font-family: "Comic Sans MS";
+        width: 300px;
+        height: 100px;
+        text-align: center;
+      }
+
+      #title {
+      }
+
+      #answer {
+        margin-top: 0;
+        margin-bottom: 20px;
+        background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);   -webkit-background-clip: text;
+        color: transparent;
+      }
+
+      #border {
+          border-style: dotted;
+          margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="border">
+        <h3 id="title">~~~~~ WORDLE HELPER ~~~~~</h3>
+        <h2 id="prefix">the answer is...</h2>
+        <h1 id="answer"></h1>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
